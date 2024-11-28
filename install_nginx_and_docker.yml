@@ -1,0 +1,14 @@
+- name: Install nginx on [web]
+  hosts: web
+  become: true
+  roles:
+    - nginx
+
+- name: Install docker on [app]
+  hosts: app
+  become: true
+  roles:
+    - docker
+
+
+
